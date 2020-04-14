@@ -1,4 +1,4 @@
-package com.fiuba.cuarentenainteligente
+package com.fiuba.cuarentenainteligente.services
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -10,10 +10,10 @@ import android.media.RingtoneManager
 import android.os.Build
 import android.util.Log
 import androidx.core.app.NotificationCompat
-import com.google.firebase.database.FirebaseDatabase
+import com.fiuba.cuarentenainteligente.R
+import com.fiuba.cuarentenainteligente.view.activities.DniActivity
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
-import kotlinx.android.synthetic.main.activity_dni.*
 
 class MyFirebaseMessagingService : FirebaseMessagingService() {
 
@@ -120,7 +120,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
      * @param messageBody FCM message body received.
      */
     private fun sendNotification(messageBody: String) {
-        val intent = Intent(this, dniActivity::class.java)
+        val intent = Intent(this, DniActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         val pendingIntent = PendingIntent.getActivity(this, 0  , intent,
             PendingIntent.FLAG_UPDATE_CURRENT)
@@ -129,7 +129,9 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         val defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
         val notificationBuilder = NotificationCompat.Builder(this, channelId)
             .setSmallIcon(R.mipmap.ic_launcher)
-            .setLargeIcon(BitmapFactory.decodeResource(baseContext.getResources(), R.mipmap.ic_launcher))
+            .setLargeIcon(BitmapFactory.decodeResource(baseContext.getResources(),
+                R.mipmap.ic_launcher
+            ))
             .setContentTitle("Cuarentena Inteligente")
             .setContentText(messageBody)
             .setAutoCancel(true)
