@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dniActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/etDniRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawablePadding="10dp"
+            android:hint="Ingresa tu DNI de registro"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/etState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawablePadding="10dp"
+            android:hint="Ingresa tu estado"
+            android:inputType="text"
+            android:padding="10dp" />
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Registrarse"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="21sp" />
+
+
+
+        <EditText
+            android:id="@+id/etMyDni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawablePadding="10dp"
+            android:hint="Ingresa tu DNI"
+            android:inputType="text"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/etMeetDni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawablePadding="10dp"
+            android:hint="Dni de contacto cercano"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Enviar a DB"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="21sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

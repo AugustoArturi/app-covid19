@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "422788812411",
+    "firebase_url": "https://covid-9621d.firebaseio.com",
+    "project_id": "covid-9621d",
+    "storage_bucket": "covid-9621d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422788812411:android:c65688318fd1f958d0dcde",
+        "android_client_info": {
+          "package_name": "com.fiuba.cuarentenainteligente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422788812411-cdciilpstjdv6qamo49dtg1l4rte4po2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fiuba.cuarentenainteligente",
+            "certificate_hash": "09a8d1dcf7a73c24fc6836f7d359c21f99277ce7"
+          }
+        },
+        {
+          "client_id": "422788812411-pk1k0dh4snbf6u5cd2l7j99a1c97785b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyJ-DfS8SKdoNlZTbNWljsP7ddroj3MbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422788812411-pk1k0dh4snbf6u5cd2l7j99a1c97785b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
