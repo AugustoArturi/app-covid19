@@ -1,16 +1,14 @@
-package com.fiuba.cuarentenainteligente
+package com.fiuba.cuarentenainteligente.view.activities
 
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.gms.tasks.OnCompleteListener
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
+import com.fiuba.cuarentenainteligente.R
+import com.fiuba.cuarentenainteligente.model.User
+import com.fiuba.cuarentenainteligente.model.UserRegister
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
 import com.google.firebase.iid.FirebaseInstanceId
 import kotlinx.android.synthetic.main.activity_dni.*
 import java.time.Instant
@@ -18,7 +16,7 @@ import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
 
 
-class dniActivity : AppCompatActivity() {
+class DniActivity : AppCompatActivity() {
 
     private lateinit var mAuthDatabase: FirebaseDatabase
     private var tokenPush : String? = null
@@ -60,7 +58,8 @@ class dniActivity : AppCompatActivity() {
         val dni = etDniRegister.text.toString()
         val state = etState.text.toString()
         val token =  FirebaseInstanceId.getInstance().getToken()!!
-        val registerdata = UserRegister(token,dni, state)
+        val registerdata =
+            UserRegister(token, dni, state)
         mAuthDatabase = FirebaseDatabase.getInstance()
         val ref = FirebaseDatabase.getInstance().getReference("/register/$dni")
         ref.setValue(registerdata)
@@ -92,7 +91,8 @@ class dniActivity : AppCompatActivity() {
         val dni = etMyDni.text.toString()
         val dniMeet = etMeetDni.text.toString()
         val time = DateTimeFormatter.ofPattern("dd-MM-yyyy ss:mm:HH").withZone(ZoneOffset.UTC).format(Instant.now())
-        val userdata = User(dni,dniMeet,time)
+        val userdata =
+            User(dni, dniMeet, time)
         val random = randomAlphaNumericString(20)
         mAuthDatabase = FirebaseDatabase.getInstance()
         val ref = FirebaseDatabase.getInstance().getReference("/interactions/$random")
