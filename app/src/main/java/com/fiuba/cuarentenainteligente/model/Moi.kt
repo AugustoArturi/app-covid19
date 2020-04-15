@@ -1,4 +1,4 @@
-package com.fiuba.cuarentenainteligente
+package com.fiuba.cuarentenainteligente.model
 
 object Moi {
 
