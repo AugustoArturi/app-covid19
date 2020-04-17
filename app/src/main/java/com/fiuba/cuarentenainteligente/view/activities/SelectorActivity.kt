@@ -17,5 +17,9 @@ class SelectorActivity : AppCompatActivity() {
             startActivity(Intent(this, DniActivity::class.java))
         }
 
+        rq_reader_button.setOnClickListener {
+            startActivity(Intent(this, QrReaderActivity::class.java))
+        }
+
     }
 }
