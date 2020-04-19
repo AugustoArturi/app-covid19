@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CuarentenaInteligente</string>
+    <string name="contact_selector_qr">Leer QR (DNI o generado)</string>
+    <string name="contact_selector_manual">Ingrese número de DNI manualmente</string>
+    <string name="contact">Efectuar contacto</string>
+    <string name="torch">Linterna</string>
+    <string name="location_permission_request_title">Permisos de localización</string>
+    <string name="location_permission_request_message">Por favor para poder tener mejores resultados en la detección de posibles casos, recomendamos acepte dar permisos para obtener su localización. Muchas gracias</string>
+    <string name="acept">Aceptar</string>
+    <string name="camera_error_message">Se necesitan permisos a la camaera para utilizar esta funcionalidad.</string>
 </resources>

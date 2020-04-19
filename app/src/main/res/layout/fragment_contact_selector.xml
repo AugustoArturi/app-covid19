@@ -5,29 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".view.activities.SelectorActivity">
+    android:orientation="vertical">
 
     <Button
-        android:id="@+id/dni_button"
+        android:id="@+id/qr_contact_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="DNI Activity"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/contact_selector_qr"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423" />
+        tools:text="Button 1" />
 
     <Button
-        android:id="@+id/contact_selector_button"
+        android:id="@+id/manual_contact_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/default_margin"
-        android:text="@string/contact"
+        android:text="@string/contact_selector_manual"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Button 2" />
 </LinearLayout>
