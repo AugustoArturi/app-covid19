@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.fiuba.cuarentenainteligente.R
+import com.fiuba.cuarentenainteligente.view.activities.contact.ContactActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 // Es temporal hasta que tengamos el flujo, la idea es ir volcando features
@@ -17,8 +18,8 @@ class SelectorActivity : AppCompatActivity() {
             startActivity(Intent(this, DniActivity::class.java))
         }
 
-        rq_reader_button.setOnClickListener {
-            startActivity(Intent(this, QrReaderActivity::class.java))
+        contact_selector_button.setOnClickListener {
+            startActivity(Intent(this, ContactActivity::class.java))
         }
 
     }
